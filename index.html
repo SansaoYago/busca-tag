@@ -36,7 +36,7 @@
         from pyscript import document
 
         # Carrega os dados do arquivo que foi 'buscado' pelo py-config
-        df = pd.read_csv("tags.csv")
+        df = pd.read_csv("tags.csv", encoding='latin1', sep=None, engine='python')
 
         def verificar_tag(event):
             # Processa apenas quando a tecla Enter for pressionada
